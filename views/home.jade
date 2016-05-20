@@ -1,0 +1,430 @@
+﻿doctype html
+//if lt IE 7 
+  html.ie.ie6(lang='en')  
+//if IE 7 
+  html.ie.ie7(lang='en')  
+//if IE 8 
+  html.ie.ie8(lang='en')  
+// [if (gte IE 9)|!(IE)] <!
+html(lang='en')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //if IE
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    //title   Black Lion Martial Arts
+    // Bootstrap Style
+    link(href='stylesheets/bootstrap.css', rel='stylesheet')
+    // Font-Awesome Style
+    link(href='stylesheets/font-awesome.min.css', rel='stylesheet')
+    // Pretty Photo Style
+    link(href='prettyPhoto.css', rel='stylesheet')
+    // Google Font Style
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Nova+Flat', rel='stylesheet', type='text/css')
+    // Custom Style
+    link(href='stylesheets/style.css', rel='stylesheet')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body
+    #pre-div
+      #loader
+    // /. End Preloader
+    include navbar.jade
+    include headsecbar.jade
+    #main-head
+      .container
+        .row
+          .col-lg-3.col-md-3.col-sm-12
+            h2 RAISE FUNDS
+            h5 We have raised fund of  
+            span
+              strong
+                i.fa.fa-dollar
+                | 3,10,345
+            h5 but for this year we require
+            span
+              strong
+                i.fa.fa-dollar
+                | 3,90,000
+            form
+              .form-group
+                input.form-control(type='text', required='required', placeholder='Your Email')
+              .form-group
+                input.form-control(type='text', required='required', placeholder='Donation Amount')
+              .form-group
+                button.btn.btn-style-1.btn-lg(type='submit') DONATE NOW
+          .col-lg-9.col-md-9.col-sm-12
+            #carousel-slider.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .item.active
+                  img(src='img/slider/1.jpg', alt='')
+                .item
+                  img(src='img/slider/2.jpg', alt='')
+                .item
+                  img(src='img/slider/3.jpg', alt='')
+              // INDICATORS
+              ol.carousel-indicators
+                li.active(data-target='#carousel-slider', data-slide-to='0')
+                li(data-target='#carousel-slider', data-slide-to='1')
+                li(data-target='#carousel-slider', data-slide-to='2')
+              // PREVIUS-NEXT BUTTONS
+              a.left.carousel-control(href='#carousel-example', data-slide='prev')
+                i.fa.fa-angle-left.fa-2x.control-icon.main-color
+              a.right.carousel-control(href='#carousel-example', data-slide='next')
+                i.fa.fa-angle-right.fa-2x.control-icon.main-color
+    // ./ MAIN HEADER SECTION END
+    #about
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after .3s')
+          .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h2 ABOUT GIVE HELP 
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .row.pad-low
+          .col-lg-4.col-md-4.hover-color(data-scroll-reveal='enter from the left after .6s')
+            .media
+              .pull-left
+                i.fa.fa-desktop.fa-5x.icon-round
+              .media-body
+                h3.media-heading Child Care Center
+                p
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+          .col-lg-4.col-md-4(data-scroll-reveal='enter from the bottom after .9s')
+            .media
+              .pull-left
+                i.fa.fa-paperclip.fa-5x.icon-round
+              .media-body
+                h3.media-heading Educate Children
+                p
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+          .col-lg-4.col-md-4(data-scroll-reveal='enter from the right after .6s')
+            .media
+              .pull-left
+                i.fa.fa-recycle.fa-5x.icon-round
+              .media-body
+                h3.media-heading Physical Growth
+                p
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+                  | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+    // ./ ABOUT SECTION END
+    #budget
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after .3s')
+          .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h2 OUR FINIANCIAL BUDGET
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            br
+        .row(data-scroll-reveal='enter from the top after .6s')
+          .col-lg-12.col-md-12.text-center
+            a.btn.btn-style-4.btn-lg(href='#') DOWNLOAD BUDGET
+    // ./ BUDGET SECTION END
+    #impact
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after .3s')
+          .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h2 OUR IMPACT
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            br
+        .row
+          .col-sm-5
+            div(data-scroll-reveal='enter from the left after .5s')
+              h4 Provided Education 
+              .progress
+                .progress-bar.progress-bar-danger(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width: 95%')
+                  span 95%
+            div(data-scroll-reveal='enter from the left after .7s')
+              h4 Food Resources 
+              .progress
+                .progress-bar.progress-bar-primary(role='progressbar', aria-valuenow='20', aria-valuemin='0', aria-valuemax='100', style='width: 75%')
+                  span 75%
+            div(data-scroll-reveal='enter from the left after .9s')
+              h4 Shelter Arrangement
+              .progress
+                .progress-bar.progress-bar-info(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 90%')
+                  span 90%
+            div(data-scroll-reveal='enter from the left after 1.1s')
+              h4 Fund Utilized
+              .progress
+                .progress-bar.progress-bar-success(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100', style='width: 98%')
+                  span 98%
+          .col-sm-7.knob-sec(data-scroll-reveal='enter from the right after .8s')
+            h4 HELP TO RAISE FUND
+            h5
+              | Total Requirement of funds is 
+              b $ 3,90,000
+            br
+            input.dial(type='text', data-step='10000', data-fgcolor='#ff0000', data-thickness='.3', value='310345', data-min='90', data-max=' 390000', data-displayprevious='true')
+            h5 $ 3,10,345  Funds raised till date
+    // ./ IMPACT SECTION END
+    .reviews-section
+      .container
+        .row
+          .col-lg-12.col-md-12
+            h2 DONATOR REVIEWS
+            #reviews.carousel.slide(data-ride='carousel')
+              ol.carousel-indicators
+                li(data-target='#reviews', data-slide-to='0')
+                li(data-target='#reviews', data-slide-to='1')
+                li.active(data-target='#reviews', data-slide-to='2')
+              .carousel-inner
+                .item
+                  .container.center
+                    .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.slide-custom
+                      h4
+                        i.fa.fa-quote-left
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. 
+                        i.fa.fa-quote-right
+                      h5.pull-right
+                        strong.c-black Lorem Dolor
+                .item
+                  .container.center
+                    .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.slide-custom
+                      h4
+                        i.fa.fa-quote-left
+                        | Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
+                        i.fa.fa-quote-right
+                      h5.pull-right
+                        strong.c-black Faucibus luctus
+                .item.active
+                  .container.center
+                    .col-lg-6.col-lg-offset-3.col-md-6.col-md-offset-3.slide-custom
+                      h4
+                        i.fa.fa-quote-left
+                        | Sed ultricies, libero ut  fringilla, ante elit luctus lorem, a egestas dui metus a arcu condimentum. 
+                        i.fa.fa-quote-right
+                      h5.pull-right
+                        strong.c-black Sed ultricies
+    // ./ REVIEWS SECTION END
+    #vedio-sec
+      .container
+        .row
+          .col-lg-6.col-md-6.col-sm-6
+            h3 How We Work ? Checkout Vedio.
+            p(data-scroll-reveal='enter from the left after 0.1s')
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Nulla pretium lectus vel
+              b  justo iaculis 
+              | blandit. Nulla facilisi.
+              |                        In hac habitasse platea dictumst. Fusce risus leo, convallis vitae bibendum in, vestibulum a tellus.
+            ul
+              li(data-scroll-reveal='enter from the left after 0.5s')
+                b Lorem ipsum 
+                | dolor sit amet, consectetur adipiscing elit.
+                |                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              li(data-scroll-reveal='enter from the left after 0.9s')
+                | Lorem ipsum dolor 
+                b sit amet, consectetur 
+                | adipiscing elit.
+                |                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              li(data-scroll-reveal='enter from the left after 1.3s')
+                b Nulla lorem ipsum 
+                | sit amet, consectetur adipiscing elit.
+          .col-lg-6.col-md-6.col-sm-6(data-scroll-reveal='enter from the right after .7s')
+            iframe.vedio-style(src='http://player.vimeo.com/video/18312392')
+    // ./ VEDIO SECTION END
+    #recent-events
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after .5s')
+          .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h2 RECENT EVENTS
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .row.pad-low(data-scroll-reveal='enter from the top after .7s')
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='assets/img/portfolio/small/1.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='assets/img/portfolio/big/1.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/2.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href=img/portfolio/big/2.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/3.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/3.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/4.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/4.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/5.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/5.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/6.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/6.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/7.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/7.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+          .col-lg-3.col-md-3.col-sm-4.col-xs-12
+            .recent-events-wrap
+              img.img-responsive(src='img/portfolio/small/8.jpg', alt='')
+              .overlay
+                .recent-events-inner
+                  h3
+                    a(href='#') Consecte Adipis 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
+                  a.preview(href='img/portfolio/big/8.jpg')
+                    i.fa.fa-eye
+                    | View Event held 27 Jun 2014
+    // ./ EVENT SECTION END
+    section#contact
+      .container
+        .row.text-center(data-scroll-reveal='enter from the bottom after .5s')
+          .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+            h2 CONTACT US
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            br
+        .row
+          .col-lg-6.col-md-6.col-sm-6.cont-div
+            form
+              .form-group(data-scroll-reveal='enter from the left after .6s')
+                input.form-control(type='text', required='required', placeholder='Your Name')
+              .form-group(data-scroll-reveal='enter from the left after .7s')
+                input.form-control(type='text', required='required', placeholder='Your Email')
+              .form-group(data-scroll-reveal='enter from the left after .8s')
+                textarea#message.form-control(name='message', required='required', style='min-height: 100px;', placeholder='Message')
+              .form-group(data-scroll-reveal='enter from the left after .9s')
+                button.btn.btn-style-2(type='submit') Submit Request
+          .col-lg-4.col-lg-offset-1.col-md-4.col-md-offset-1.col-sm-4.col-sm-offset-1(data-scroll-reveal='enter from the right after .8s')
+            h3
+              strong OUR LOCATION 
+            p
+              | Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            p
+              strong ADDRESS :
+              |  2234/908, Newyork City , USA - 002309
+            br
+            form(role='form')
+              .input-group
+                input.form-control(type='text', autocomplete='off', placeholder='Enter your email', required='')
+                span.input-group-btn
+                  button.btn.btn-primary(type='button') Subdcribe!
+    // ./ Contact End
+    #footer-sec
+      .container
+        .row
+          #about-ftr.col-lg-4.col-md-4
+            h3
+              span A Small Introduction
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Praesent suscipit sem vel ipsum elementum venenatis.
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              | Praesent suscipit sem vel ipsum elementum venenatis.
+              | Praesent suscipit sem vel ipsum elementum venenatis.
+          .col-lg-4.col-md-4
+            h3
+              span Latest Donations
+            #blog-footer-div
+              .media
+                .pull-left
+                  img.img-thumbnail(src='img/user2.png', alt='')
+                .media-body
+                  span.media-heading JHON DEO TEAMA
+                  small.muted $ 5000 in Cash
+              .media
+                .pull-left
+                  img.img-thumbnail(src='img/user.gif', alt='')
+                .media-body
+                  span.media-heading JUSTIN DECOSTA
+                  small.muted $ 4000 by Cheque
+          .col-lg-4.col-md-4
+            h3
+              span Quick Donation
+            div
+              | 234/90, Newyork Street , USA
+              br
+              |                         Call: +61-123-456-789
+              br
+              |                         E-mail: support@yourdomin.com
+            .form-group
+              button.btn.btn-style-2(type='submit') DONATE FOR A CHILD
+    #footser-end
+      .container
+        .row
+          .col-lg-12.col-md-12
+            | 2014 All Rights Reserved |  by 
+            a(href='http://www.binarytheme.com/', target='_blank', style='color: #fff')  binarytheme.com
+    // ./ footer-end End
+    .move-me
+      a.scrollup(href='#home')
+        i.fa.fa-chevron-up
+    // END SCROLLUP LINK SECTION
+    // Jquery Core Script
+    script(src='javascripts/jquery-1.10.2.js')
+    // Core Bootstrap Script
+    script(src='javascripts/bootstrap.js')
+    // Scrolling Script
+    script(src='javascripts/jquery.easing.min.js')
+    // PrettyPhoto Script
+    script(src='javascripts/jquery.prettyPhoto.js')
+    // knob Scripts
+    script(src='javascripts/jquery.knob.js')
+    // SCROLL REVEAL Scripts
+    script(src='javascripts/scrollReveal.js')
+    // Custom Scripts
+    script(src='javascripts/custom.js')
+    script.
