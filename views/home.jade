@@ -41,25 +41,21 @@ html(lang='en')
       .container
         .row
           .col-lg-3.col-md-3.col-sm-12
-            h2 RAISE FUNDS
-            h5 We have raised fund of  
-            span
-              strong
-                i.fa.fa-dollar
-                | 3,10,345
-            h5 but for this year we require
-            span
-              strong
-                i.fa.fa-dollar
-                | 3,90,000
-            form
+            h2 Enquire Here!
+            h5 Organise an introductory lesson here
+              
+            form(action = '/enquire', method='post')
               .form-group
-                input.form-control(type='text', required='required', placeholder='Your Email')
+                input.form-control(name='Name', type='text', required='required', placeholder='Your Name')
               .form-group
-                input.form-control(type='text', required='required', placeholder='Donation Amount')
+                input.form-control(name='Number', type='text', required='required', placeholder='Contact Number')
               .form-group
-                button.btn.btn-style-1.btn-lg(type='submit') DONATE NOW
-          .col-lg-9.col-md-9.col-sm-12
+                input.form-control(name='Email', required='required', placeholder='Email')
+              .form-group
+                input.form-control(name='Message', type='text', required='required', placeholder='Enquiry')
+              .form-group
+                button.btn.btn-style-1.btn-lg(type='submit') SEND
+          .col-lg-6.col-md-6.col-sm-12
             #carousel-slider.carousel.slide(data-ride='carousel')
               .carousel-inner
                 .item.active
@@ -78,6 +74,11 @@ html(lang='en')
                 i.fa.fa-angle-left.fa-2x.control-icon.main-color
               a.right.carousel-control(href='#carousel-example', data-slide='next')
                 i.fa.fa-angle-right.fa-2x.control-icon.main-color
+          .col-lg-3.col-md-3.col-sm-12
+            h2 Enquire Here!
+            h5 Organise an introductory lesson here
+              
+           
     // ./ MAIN HEADER SECTION END
     #about
       .container
@@ -259,7 +260,7 @@ html(lang='en')
                   h3
                     a(href='#') Consecte Adipis 
                   p Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie
-                  a.preview(href=img/portfolio/big/2.jpg')
+                  a.preview(href='img/portfolio/big/2.jpg')
                     i.fa.fa-eye
                     | View Event held 27 Jun 2014
           .col-lg-3.col-md-3.col-sm-4.col-xs-12

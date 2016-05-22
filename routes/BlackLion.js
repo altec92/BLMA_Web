@@ -14,3 +14,9 @@ exports.TaiChi = function(req, res){
 exports.KungFu = function(req, res){
   res.render('KungFu', {title: 'BLMA: KungFu'});
 };
+
+exports.enquire = function (req, res) {
+    var name = req.body.name;
+    res.send(req.body);
+    console.log("hello");
+}
