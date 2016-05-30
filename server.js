@@ -5,10 +5,11 @@
 
 var express = require('express')
   , BlackLion = require('./routes/BlackLion')
+  , mailer = require('./routes/mailer')
   , http = require('http')
   , path = require('path')
   , studentDb = require('mysql')
-  , mailer = require('nodemailer')
+
   , bodyParser = require('body-parser');
 
 
@@ -40,7 +41,7 @@ app.get('/', BlackLion.home);
 app.get('/KungFu', BlackLion.KungFu);
 app.get('/TaiChi', BlackLion.TaiChi);
 
-app.post('/enquire', BlackLion.enquire);
+app.post('/enquire', mailer.SendEnq);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

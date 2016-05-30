@@ -41,7 +41,7 @@ h2:after {
     display: block;
     width: 120px;
     height: 2px;
-    background: #FF4F4F;
+    background: #FF0000;
     margin: auto;
     text-align: center;
     margin-top: 15px;
@@ -153,12 +153,12 @@ i.fa.fa-facebook.fa-3x{
  MAIN  HEADER SECTION  STYLE 
     ===================================*/
 #main-head {
-    color: #fff;
+    color: #000 ;
     padding: 20px 10px 35px 10px;
     line-height: 40px;
     font-size: 14px;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
     #main-head input:focus {
@@ -169,7 +169,7 @@ i.fa.fa-facebook.fa-3x{
         height: 40px;
         color: #ff6a00;
         background-color: rgba(255, 255, 255, 0);
-        border: 1px solid #FF4F4F;
+        border: 1px solid #FF0000;
         -webkit-border-radius: 0px;
         -moz-border-radius: 0px;
         -webkit-border-radius: 0px;
@@ -177,13 +177,21 @@ i.fa.fa-facebook.fa-3x{
         border-radius: 0px;
     }
 
-    #main-head span {
+/*    #main-head span {
         color: #FF4F4F;
         font-size: 30px;
     }
-
+    */
     #main-head h5 {
         padding: 10px 2px 10px 2px;
+    }
+    
+    #main-head .fa-check{
+        color: #FF0000;
+        margin: 5px;
+    }
+    #main-head li{
+        margin: 5px;
     }
 /*=====================================
  SLIDER SECTION
@@ -235,8 +243,8 @@ i.fa.fa-facebook.fa-3x{
     ===================================*/
 .btn-style-1 {
     color: #fff;
-    background-color: #FF4F4F;
-    border-color: #296F56;
+    background-color: #FF0000;
+    border-color: #000;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -335,6 +343,9 @@ i.fa.fa-facebook.fa-3x{
         background-color: #FF4F4F;
         cursor: pointer;
     }
+#about .media .pull-left img {
+    height: 128px;
+}
 
 /*=====================================
  BUDGET SECTION  STYLE 
