@@ -40,7 +40,7 @@ html(lang='en')
     #main-head
       .container
         .row
-          .col-lg-3.col-md-3.col-sm-12
+          .col-lg-3.col-md-3.col-sm-12.enquiry
             h2 Enquire Here!
             h5 Organise an introductory lesson here
               
@@ -52,10 +52,10 @@ html(lang='en')
               .form-group
                 input.form-control(name='Email', required='required', placeholder='Email')
               .form-group
-                input.form-control(name='Message', type='text', required='required', placeholder='Enquiry')
+                textarea.form-control.message-box(name='Message', type='text', required='required', placeholder='Enquiry')
               .form-group
                 button.btn.btn-style-1.btn-lg(type='submit') SEND
-          .col-lg-6.col-md-6.col-sm-12
+          .col-lg-6.col-md-6.col-sm-12.carousel
             #carousel-slider.carousel.slide(data-ride='carousel')
               .carousel-inner
                 .item.active
@@ -74,7 +74,7 @@ html(lang='en')
                 i.fa.fa-angle-left.fa-2x.control-icon.main-color
               a.right.carousel-control(href='#carousel-example', data-slide='next')
                 i.fa.fa-angle-right.fa-2x.control-icon.main-color
-          .col-lg-3.col-md-3.col-sm-12
+          .col-lg-3.col-md-3.col-sm-12.left-info
             h2 KUNG FU & TAI CHI TRAINING
             h4
                 ul.list-unstyled  
@@ -99,7 +99,7 @@ html(lang='en')
           .col-lg-8.col-lg-offset-2.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
             h2 ABOUT BLACK LION MARTIAL ARTS
             p
-              | At Black Lion Martial Arts, our motto is "Challenge yourself...for life!". Whether you choose to join a school or not, 
+              | At Black Lion Martial Arts, our motto is "<b>Challenge yourself...for life!</b>". Whether you choose to join a school or not, 
               | we encourage everyone to challenge yourself every day, in ways both big and small, to reach higher, 
               | search further, and never settle for less.
         .row
